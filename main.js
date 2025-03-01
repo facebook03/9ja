@@ -9,7 +9,7 @@ async function login(id, password,callback){
   const fullurl = url + id;
   const req = await fetch(fullurl);
   if(!req.ok){
-    callback("network error");
+    callback("account not found!");
     throw new Error("network issues");
   }
   const contentType = req.headers.get("content-type");
