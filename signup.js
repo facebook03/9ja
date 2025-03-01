@@ -55,7 +55,7 @@ ca.addEventListener("click",async (e) => {
     alert("network error try again!");
     throw new Error("network error");
   }
-  if(req.status === 404){
+  if(req.status === 400){
   if(password.value.length >= 6){
     const data = {
       id: generatedId,
