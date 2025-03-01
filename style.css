@@ -1,0 +1,385 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.header{
+  display: flex;
+  height: 4em;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding: 0em 1em;
+  background: white;
+  position: sticky;
+  top: 0;
+}
+
+.header .name img{
+  width: 2em;
+  height: 2em;
+}
+
+.header .name{
+  display: flex;
+  font-size: 2em;
+  color: dodgerblue;
+  font-family: monospace;
+  font-weight: 1000;
+  align-items: center;
+}
+
+.header #menu{
+  font-size: 2em;
+}
+
+.click{
+  text-align: center;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-family: monospace;
+}
+
+.st {
+  width: 95%;
+  height: 10em;
+  background: white;
+  justify-self: center;
+  border-radius: 0.5em;
+  box-shadow: 0px 0px 5px lightgray;
+}
+
+.st #buy{
+  width: 80%;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  font-size: 1.5em;
+  background: dodgerblue;
+  border-radius: 1em;
+  color: white;
+  text-transform: capitalize;
+}
+
+.price{
+  padding: 1em;
+}
+
+.price .amt{
+  font-size: 1.7em;
+  font-weight: 500;
+  color: grey;
+}
+
+.price .per{
+  font-size: 0.8em;
+}
+
+.yid{
+  text-align: center;
+  padding: 1em;
+}
+
+.yid span{
+  text-transform: capitalize;
+  color: dodgerblue;
+}
+
+.st .top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.login input {
+  width: 90%;
+  height: 2.7em;
+  outline: none;
+  box-sizing: border-box;
+  padding: 0em 1em;
+  margin: 1em 0em;
+  border-radius: 0.5em;
+  border: 1px solid lightgray;
+  background: whitesmoke;
+  
+}
+
+.login {
+  width: 90%;
+  background: white;
+  justify-self: center;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 0em;
+  border-radius: 1em;
+  box-shadow: 0px 0px 5px lightgray;
+  
+}
+
+.login #btn{
+  width: 90%;
+  height: 2.6em;
+  display: flex;
+  background: dodgerblue;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5em;
+  margin: 1em;
+  color: white;
+  opacity: 0.3;
+}
+
+.login .ca{
+  font-size: 0.8em;
+  text-transform: capitalize;
+  color: dodgerblue;
+}
+
+.login #error{
+  color: crimson;
+  font-size: 0.9em;
+}
+
+.signup{
+  width: 90%;
+  background: white;
+  justify-self: center;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 0em;
+  border-radius: 1em;
+  box-shadow: 0px 0px 5px lightgray;
+}
+
+.signup input{
+  width: 90%;
+  height: 2.7em;
+  outline: none;
+  box-sizing: border-box;
+  padding: 0em 1em;
+  margin: 1em 0em;
+  border-radius: 0.5em;
+  border: 1px solid lightgray;
+  background: whitesmoke;
+}
+
+.signup .gid{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.signup .gid #idbox{
+  display: flex;
+  width: 70%;
+  height: 2.6em;
+  background: white;
+  box-shadow: 0px 0px 5px lightgrey;
+  border-radius: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup .gid #cp{
+  width: 3em;
+  height: 2.6em;
+  background: white;
+  box-shadow: 0px 0px 5px lightgrey;
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup .gid #cp:active{
+  box-shadow: 0px 0px 5px lightgrey inset;
+}
+
+.signup .info{
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.signup #info{
+  font-size: 0.9em;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+.signup #ca{
+  width: 90%;
+  height: 2.6em;
+  background: dodgerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5em;
+  color: white;
+  opacity: 0.3;
+}
+
+.monitorbox{
+  width: 95%;
+  height: 30em;
+  background: white;
+  margin: 1em auto;
+  background: white;
+  padding: 1em;
+  box-sizing: border-box;
+  border-radius: 0.5em;
+}
+
+.monitorbox ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background: whitesmoke;
+  border-radius: 0.5em 0.5em 0em 0em;
+  overflow: hidden;
+  display: flex;
+}
+
+.monitorbox ul li{
+  display: inline-block;
+  padding: 0.5em 1em;
+  box-sizing: border-box;
+}
+
+.monitorbox ul li:active {
+  box-sizing: border-box;
+  border-bottom: 3px solid dodgerblue;
+  background: lightgray;
+  color: dodgerblue;
+}
+
+.monitorbox ul .active{
+  background: dodgerblue;
+  color: white;
+}
+
+.monitorbox .logintable{
+  width: 100%;
+  height: auto;
+  max-height: 80%;
+  overflow: scroll;
+}
+
+.monitorbox .logintable table{
+  border-collapse: collapse;
+}
+
+.monitorbox .logintable table tr th{
+  padding: 0.5em;
+  text-transform: capitalize;
+}
+
+.monitorbox .logintable table tr td{
+  padding: 0.5em;
+  text-align: center;
+}
+
+.monitorbox .logintable table tr:nth-child(even){
+  background: whitesmoke;
+}
+
+.monitorbox .logintable #livetable{
+  display: none;
+}
+
+.monitorbox .logintable table tr:hover{
+  background: dodgerblue;
+  color: white;
+}
+
+.monitorbox .logintable #settingtable{
+  display: none;
+}
+
+.monitorbox .logintable #settingtable .stx{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  
+}
+
+.monitorbox .logintable #settingtable .stx div{
+  padding: 1em 2em;
+  text-transform: capitalize;
+
+}
+
+.monitorbox .logintable #settingtable .stx .stxbtn{
+  background: whitesmoke;
+  padding: 1em;
+}
+
+.agentbox{
+  width: 95%;
+  display: none;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  background: white;
+  margin: 2em 0em;
+  border-radius: 0.5em;
+}
+
+.agentbox input{
+  width: 70%;
+  height: 2.5em;
+  box-sizing: border-box;
+  outline: none;
+  text-align: center;
+  margin: 0.5em 0em;
+  border-radius: 0.5em;
+  border: 1px solid lightgrey;
+  background: whitesmoke;
+  
+}
+
+.agentbox .sendc{
+  width: 70%;
+  height: 2.3em;
+  background: dodgerblue;
+  margin: 0.5em 0em 3em 0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 0.5em;
+  opacity: 0.3;
+}
+
+.agentbox h2{
+  text-transform: capitalize;
+  color: grey;
+  font-family: monospace;
+  margin: 2em;
+}
+
+.hacklink{
+  width: 95%;
+  background: white;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin-top: 2em;
+}
+
+.hacklink h3{
+  text-transform: capitalize;
+}
+
+.hacklink .hklink{
+  color: dodgerblue;
