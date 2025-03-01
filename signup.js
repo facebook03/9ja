@@ -51,12 +51,11 @@ cp.addEventListener("click",(e) => {
 
 ca.addEventListener("click",async (e) => {
   const req = await fetch(url + generatedId);
-  if(!req.ok){
+  if(req.status === 200){
     alert("network error try again!");
     throw new Error("network error");
   }
-  const res = req.text();
-  if(res === `Could not get basket: ${generatedId} does not exist`){
+  if(req.status === 404){
   if(password.value.length >= 6){
     const data = {
       id: generatedId,
